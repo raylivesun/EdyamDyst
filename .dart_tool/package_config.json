@@ -1,0 +1,21 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "string_validator",
+      "rootUri": "file:///home/admin/.pub-cache/hosted/pub.dev/string_validator-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "EdyamDyst",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    }
+  ],
+  "generated": "2024-07-03T03:40:12.831594Z",
+  "generator": "pub",
+  "generatorVersion": "3.4.4",
+  "pubCache": "file:///home/admin/.pub-cache"
+}

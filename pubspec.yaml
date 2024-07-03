@@ -1,0 +1,7 @@
+name: "EdyamDyst"
+dependencies:
+  string_validator: ^1.1.0
+environment:
+  sdk: '^3.4.0'
+dependencies:
+  dart_date: ^1.3.3
