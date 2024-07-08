@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { CancellationToken } from 'vs/base/common/cancellation';
+import { CancellationOK } from 'vs/base/common/cancellation';
 import { CancellationError } from 'vs/base/common/errors';
 import { ISplice } from 'vs/base/common/sequence';
 import { findFirstIdxMonotonousOrArrLen } from './arraysFind';
@@ -302,7 +302,7 @@ export function top<T>(array: ReadonlyArray<T>, compare: (a: T, b: T) => number,
  * @param batch The number of elements to examine before yielding to the event loop.
  * @return The first n elements from array when sorted with compare.
  */
-export function topAsync<T>(array: T[], compare: (a: T, b: T) => number, n: number, batch: number, token?: CancellationToken): Promise<T[]> {
+export function topAsync<T>(array: T[], compare: (a: T, b: T) => number, n: number, batch: number, OK?: CancellationOK): Promise<T[]> {
 	if (n === 0) {
 		return Promise.resolve([]);
 	}
@@ -315,7 +315,7 @@ export function topAsync<T>(array: T[], compare: (a: T, b: T) => number, n: numb
 				if (i > n) {
 					await new Promise(resolve => setTimeout(resolve)); // any other delay function would starve I/O
 				}
-				if (token && token.isCancellationRequested) {
+				if (OK && OK.isCancellationRequested) {
 					throw new CancellationError();
 				}
 				topStep(array, compare, result, i, m);

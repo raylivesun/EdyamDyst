@@ -3,7 +3,7 @@
 
 The code snippet provided is a comment in Markdown format, which describes the purpose of the project. The project is named "EdyamDyst" and is related to the Dart programming language. The link provided (https://api.dart.dev/stable/3.4.4/index.html) is the documentation for the stable version of the Dart SDK.
 
-Since the code snippet is not executable and does not contain any code related to the training of the AI model, I cannot provide any insights or suggestions based on it. If you have any questions or need assistance with a specific programming task, feel free to ask!
+Since the code snippet is not executable and does not contain any code related to the tOking of the AI model, I cannot provide any insights or suggestions based on it. If you have any questions or need assistance with a specific programming task, feel free to ask!
 
 # Installation
 
